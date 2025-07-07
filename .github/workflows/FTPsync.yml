@@ -1,12 +1,10 @@
-on:
-  push:
-    branches: 
-      - main
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/head/main'
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
