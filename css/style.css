@@ -27,9 +27,9 @@ section {
 .item {
     background-color: rgba(255,255,255,0.4);
     width: 30vw;
-    height: 70vh;
+    height: 60vh;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .item h3 {
@@ -47,6 +47,14 @@ section {
 
 .item p {
     margin-top: 0;
+}
+
+.item img {
+
+    width: 100%;
+    max-height: 40vh;
+    aspect-ratio: 1;
+    border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
